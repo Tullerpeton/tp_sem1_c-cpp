@@ -6,7 +6,7 @@ extern "C" {
 #endif
 
 #include <stdio.h>
-#include "../Errors/error_code.h"
+#include "Errors/error_code.h"
 
 typedef struct Point3D {
     float x;

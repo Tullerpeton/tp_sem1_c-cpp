@@ -1,8 +1,8 @@
 #include <fstream>
 #include "gtest/gtest.h"
-#include "../Geometry/point3D.h"
-#include "../Geometry/tetrahedron.h"
-#include "../Geometry/geometry_operations.h"
+#include "Geometry/point3D.h"
+#include "Geometry/tetrahedron.h"
+#include "Geometry/geometry_operations.h"
 
 
 // Тестирование модуля point3D

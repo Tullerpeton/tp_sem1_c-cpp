@@ -7,8 +7,8 @@ extern "C" {
 
 #include "stdio.h"
 
-#include "../Geometry/tetrahedron.h"
-#include "../Geometry/geometry_operations.h"
+#include "Geometry/tetrahedron.h"
+#include "Geometry/geometry_operations.h"
 
 error task_manager();
 
