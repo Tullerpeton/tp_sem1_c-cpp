@@ -23,7 +23,7 @@ float* find_min_square(const Point3D* pnt1, const Point3D* pnt2,
 
     float* res = (float*) malloc(sizeof(float));
     if (!res)
-        return MEMORY_ERROR;
+        return NULL;
 
     *res = min_square;
     return res;
