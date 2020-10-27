@@ -1,0 +1,25 @@
+dist:     trusty
+sudo:     required
+
+language: cpp
+
+os:
+  - linux
+
+compiler:
+  - g++
+
+addons:
+  apt:
+    packages: lcov
+
+install:
+  - echo INSTALLING DEPENDENCES
+  # скрипт настройки среды и установки зависимостей:
+  - source iz_1/ci/travis/install-linux.sh
+
+script:
+  - cd iz_1
+  - cmake -DCMAKE_BUILD_TYPE=Test ./
+  - make
+  - valgrind --leak-check=full --leak-resolution=med --track-origins=yes --vgdb=no ./iz_1
